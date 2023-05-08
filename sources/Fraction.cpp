@@ -77,8 +77,6 @@ namespace ariel {
     }
 
     Fraction Fraction::operator+(const Fraction &fraction) const {
-//        cout << endl << this->numerator << "/" << this->denominator << "+" << fraction.numerator << "/"
-//             << fraction.denominator << endl;
         int max_int = std::numeric_limits<int>::max();
         int min_int = std::numeric_limits<int>::min();
         if (((max_int * 1.0 / this->numerator) / fraction.denominator < 1) &&
